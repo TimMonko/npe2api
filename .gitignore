@@ -40,3 +40,6 @@ yarn-error.log*
 # Ignore generated credentials from google-github-actions/auth
 gha-creds-*.json
 *.pyc
+
+# generated data: a worktree of the data branch (see CONTRIBUTING.md)
+/public/

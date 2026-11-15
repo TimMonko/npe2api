@@ -35,7 +35,15 @@ source .venv/bin/activate
 python -m pip install -e ".[dev]"
 ```
 
-3. Run the development server
+3. Get the data. The generated JSON lives on the `data` branch, not on
+   `main`. Check it out into `public/`, where every script expects it:
+
+```bash
+git fetch origin data
+git worktree add public data
+```
+
+4. Run the development server
 ```bash
 npm run dev
 ```
